@@ -3,7 +3,10 @@
 export LANG=ja_JP.UTF-8
 
 # 各種パス追加
+## nodebrew
 export PATH="$HOME/.nodebrew/current/bin:$PATH"
+## git
+export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 ### Zplugin https://github.com/zdharma/zplugin ----
 ### Added by Zplugin's installer
