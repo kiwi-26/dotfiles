@@ -3,10 +3,15 @@
 export LANG=ja_JP.UTF-8
 
 # 各種パス追加
-## nodebrew
-export PATH="$HOME/.nodebrew/current/bin:$PATH"
 ## git
 export PATH="/usr/local/opt/gettext/bin:$PATH"
+
+# anyenv
+eval "$(anyenv init -)"
+
+## to use php@7.2 (install via homebrew)
+export PATH="/usr/local/opt/php@7.2/bin:$PATH"
+export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
 
 ### Zplugin https://github.com/zdharma/zplugin ----
 ### Added by Zplugin's installer
@@ -56,9 +61,3 @@ zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
-
-# --------
-# anyenv
-eval "$(anyenv init -)"
-
-
