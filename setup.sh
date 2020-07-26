@@ -1,10 +1,11 @@
 #!/bin/bash
 
 DOT_FILES=(.zshrc)
+WORK_DIR=`pwd`
 
 for file in ${DOT_FILES[@]}
 do
-    ln -s $HOME/dotfiles/$file $HOME/$file
+    ln -s $WORK_DIR/$file $HOME/$file
 done
 
 # Zplugin
