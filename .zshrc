@@ -10,18 +10,26 @@ export PATH="/usr/local/opt/gettext/bin:$PATH"
 eval "$(anyenv init -)"
 
 ## phpenv (php-build)
-export PATH="/usr/local/opt/bison/bin:$PATH"
-export PATH="/usr/local/opt/libxml2/bin:$PATH"
-export PATH="/usr/local/opt/bzip2/bin:$PATH"
-export PATH="/usr/local/opt/curl/bin:$PATH"
-export PATH="/usr/local/opt/libiconv/bin:$PATH"
-export PATH="/usr/local/opt/krb5/bin:$PATH"
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-export PATH="/usr/local/opt/icu4c/bin:$PATH"
+# export PATH="/usr/local/opt/bison/bin:$PATH"
+# export PATH="/usr/local/opt/libxml2/bin:$PATH"
+# export PATH="/usr/local/opt/bzip2/bin:$PATH"
+# export PATH="/usr/local/opt/curl/bin:$PATH"
+# export PATH="/usr/local/opt/libiconv/bin:$PATH"
+# export PATH="/usr/local/opt/krb5/bin:$PATH"
+# export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+# export PATH="/usr/local/opt/icu4c/bin:$PATH"
 
-export PKG_CONFIG_PATH="/usr/local/opt/krb5/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig:$PKG_CONFIG_PATH"
+# export PKG_CONFIG_PATH="/usr/local/opt/krb5/lib/pkgconfig:$PKG_CONFIG_PATH"
+# export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig:$PKG_CONFIG_PATH"
+# export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+## php@7.4 (homebrew)
+export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
+
+## pngquant https://pngquant.org/
+## place pngquant directory to ~/Documents/pngquant dir
+export PATH="~/Documents/pngquant:$PATH"
 
 ### Zplugin https://github.com/zdharma/zplugin ----
 ### Added by Zplugin's installer
